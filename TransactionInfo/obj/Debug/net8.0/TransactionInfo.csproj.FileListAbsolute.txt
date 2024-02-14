@@ -134,3 +134,4 @@ C:\Users\23324\source\repos\TransactionInfo\TransactionInfo\obj\Debug\net8.0\Tra
 C:\Users\23324\source\repos\TransactionInfo\TransactionInfo\obj\Debug\net8.0\TransactionInfo.RazorAssemblyInfo.cs
 C:\Users\23324\source\repos\TransactionInfo\TransactionInfo\bin\Debug\net8.0\CsvHelper.dll
 C:\Users\23324\source\repos\TransactionInfo\TransactionInfo\bin\Debug\net8.0\System.Linq.Async.dll
+C:\Users\23324\source\repos\TransactionInfo\TransactionInfo\obj\Debug\net8.0\TransactionInfo.sourcelink.json

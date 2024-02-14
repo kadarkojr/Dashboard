@@ -12,68 +12,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Example</title>
+    <title>Dashboard</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
-    <div class="container-fluid top-sect">
-        <div class="container px-4 py-5">
-            <h2 class="pb-2 border-bottom">Features with title</h2>
-
-            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-                <div class="col d-flex flex-column align-items-start gap-2">
-                    <h2 class="fw-bold text-body-emphasis">Left-aligned title explaining these awesome features</h2>
-                    <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                    <a href="#" class="btn btn-primary btn-lg">Primary button</a>
-                </div>
-
-                <div class="col">
-                    <div class="row row-cols-1 row-cols-sm-2 g-4">
-                        <div class="col d-flex flex-column gap-2">
-                            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                                <svg class="bi" width="1em" height="1em">
-                                    <use xlink:href="#collection"></use>
-                                </svg>
-                            </div>
-                            <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
-                            <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+    <div class="container-fluid px-4 py-5">
+        <div class="g-5 py-5">
+                <div class="row">
+                    <div class="row col-2 top-value m-4 p-3">
+                        <div class="no-overflow mt-5">
+                            <p>MVP</p>
+                            <h2 class="text-wrap wrap-text">@Model.TransactionMVP.Transaction_Values</h2>
+                            <p>@Model.TransactionMVP.Product_Name</p>
                         </div>
-
-                        <div class="col d-flex flex-column gap-2">
-                            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                                <svg class="bi" width="1em" height="1em">
-                                    <use xlink:href="#gear-fill"></use>
-                                </svg>
-                            </div>
-                            <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
-                            <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+                        <div class="inner-sect">
+                            <img class="image" src="~/images/money-bag-svgrepo-com (2).svg" />
                         </div>
-
-                        <div class="col d-flex flex-column gap-2">
-                            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                                <svg class="bi" width="1em" height="1em">
-                                    <use xlink:href="#speedometer"></use>
-                                </svg>
-                            </div>
-                            <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
-                            <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+                    </div>
+                    <div class="row col-2 top-value m-4 p-3">
+                        <div class="no-overflow mt-5">
+                            <p>MUP</p>
+                            <h2 class="text-wrap wrap-text">@Model.TransactionMUP.Transaction_Count</h2>
+                            <p>@Model.TransactionMUP.Product_Name</p>
                         </div>
-
-                        <div class="col d-flex flex-column gap-2">
-                            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                                <svg class="bi" width="1em" height="1em">
-                                    <use xlink:href="#table"></use>
-                                </svg>
-                            </div>
-                            <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
-                            <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+                        <div class="inner-sect">
+                            <img class="image" src="~/images/pie-chart-piechart-stats-analytics-svgrepo-com.svg" />
+                        </div>
+                    </div>
+                    <div class="row col-2 top-value m-4 p-3">
+                        <div class="no-overflow mt-5">
+                            <p>MEP</p>
+                            <h2 class="text-wrap wrap-text">@(Model.PURatio.Transaction_Values / Model.PURatio.Transaction_Count)</h2>
+                            <p>@Model.PURatio.Product_Name</p>
+                        </div>
+                        <div class="inner-sect">
+                            <img class="image" src="~/images/efficiency-system-production-productivity-svgrepo-com (1).svg" />
+                        </div>
+                    </div>
+                    <div class="row col-2 top-value m-4 p-3">
+                        <div class="no-overflow mt-5">
+                            <p>Total Value</p>
+                            <h2 class="text-wrap wrap-text">@Model.TotalValue</h2>
+                            <p>Ghana Cedis</p>
+                        </div>
+                        <div class="inner-sect">
+                            <img class="image" src="~/images/chart-upward-svgrepo-com.svg" />
+                        </div>
+                    </div>
+                    <div class="row col-2 top-value m-4 p-3">
+                        <div class="no-overflow mt-5">
+                            <p>Total Processed</p>
+                            <h2 class="text-wrap wrap-text">@Model.TotalTransactions</h2>
+                            <p>Transactions</p>
+                        </div>
+                        <div class="inner-sect">
+                            <img class="image" src="~/images/check-circle-svgrepo-com.svg" />
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
-        @*<div class="row col-12">
+    </div>
+    @*<div class="container-fluid top-sect">
+        <div class="row col-12">
             <div class="row col-2 top-value m-4 p-3">
                 <div class="no-overflow">
                     <p>MVP</p>
@@ -124,8 +125,8 @@
                     <img class="image" src="~/images/check-circle-svgrepo-com.svg" />
                 </div>
             </div>
-        </div>*@
-    </div>
+        </div>
+    </div>*@
     <br />
     <div class="container-fluid col-12">
         <div class="row col-12">

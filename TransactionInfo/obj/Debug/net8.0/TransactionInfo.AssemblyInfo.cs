@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TransactionInfo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f0605134696b3b57af7842b0f3d0f69d7308cc7")]
 [assembly: System.Reflection.AssemblyProductAttribute("TransactionInfo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TransactionInfo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
